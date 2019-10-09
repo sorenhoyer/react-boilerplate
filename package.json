@@ -1,0 +1,45 @@
+{
+  "name": "react-relay-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "webpack --progress --colors --mode=production",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development",
+    "fetch-schema": "node scripts/fetch-schema.js",
+    "relay": "relay-compiler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorenhoyer/react-relay-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorenhoyer/react-relay-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sorenhoyer/react-relay-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
+    "babel-loader": "^8.0.6",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
